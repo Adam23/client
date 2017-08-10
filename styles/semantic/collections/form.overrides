@@ -1,0 +1,8 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.form {
+  .intimity.field {
+    margin-bottom: 0px;
+  }
+}

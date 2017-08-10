@@ -1,0 +1,10 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@margin: 0em 0em;
+@borderRadius: 0em;
+
+@imageMargin:  -0.5em 0em;
+@imageWidth: 8.2em;
+
+@hoverItemBackground: @background;

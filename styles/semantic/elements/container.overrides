@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.action.container {
+  max-width: 500px !important;
+
+  h1:first-of-type {
+    margin-top: @huge;
+    margin-bottom: @huge;
+  }
+}

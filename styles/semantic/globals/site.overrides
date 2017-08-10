@@ -1,0 +1,181 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@font-face {
+  font-family: @fontName;
+  src: @fontNameFallbackSrc;
+  src: @fontNameSrc;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: @headerFontName;
+  src: @headerFontNameFallbackSrc;
+  src: @headerFontNameSrc;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: @monoFontName;
+  src: @monoFontNameFallbackSrc;
+  src: @monoFontNameSrc;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+body {
+  -webkit-font-smoothing: @fontSmoothing;
+}
+
+.ui.text.warning {
+  color: @warningColor;
+}
+
+/* Mobile Only Hide */
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.segment[class*="tablet only"]:not(.mobile),
+  .ui.menu .menu[class*="tablet only"]:not(.mobile),
+  .ui.menu .item[class*="tablet only"]:not(.mobile) {
+    display: none !important;
+  }
+  .ui.segment[class*="computer only"]:not(.mobile),
+  .ui.menu .menu[class*="computer only"]:not(.mobile),
+  .ui.menu .item[class*="computer only"]:not(.mobile) {
+    display: none !important;
+  }
+  .ui.segment[class*="large screen only"]:not(.mobile),
+  .ui.menu .menu[class*="large screen only"]:not(.mobile),
+  .ui.menu .item[class*="large screen only"]:not(.mobile) {
+    display: none !important;
+  }
+  .ui.segment[class*="widescreen only"]:not(.mobile),
+  .ui.menu .menu[class*="widescreen only"]:not(.mobile),
+  .ui.menu .item[class*="widescreen only"]:not(.mobile) {
+    display: none !important;
+  }
+}
+/* Tablet Only Hide */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  .ui.segment[class*="mobile only"]:not(.tablet),
+  .ui.menu .menu[class*="mobile only"]:not(.tablet),
+  .ui.menu .item[class*="mobile only"]:not(.tablet) {
+    display: none !important;
+  }
+  .ui.segment[class*="computer only"]:not(.tablet),
+  .ui.menu .menu[class*="computer only"]:not(.tablet),
+  .ui.menu .item[class*="computer only"]:not(.tablet) {
+    display: none !important;
+  }
+  .ui.segment[class*="large screen only"]:not(.mobile),
+  .ui.menu .menu[class*="large screen only"]:not(.mobile),
+  .ui.menu .item[class*="large screen only"]:not(.mobile) {
+    display: none !important;
+  }
+  .ui.segment[class*="widescreen only"]:not(.mobile),
+  .ui.menu .menu[class*="widescreen only"]:not(.mobile),
+  .ui.menu .item[class*="widescreen only"]:not(.mobile) {
+    display: none !important;
+  }
+}
+/* Computer Only Hide */
+@media only screen and (min-width: @computerBreakpoint) and (max-width: @largestSmallMonitor) {
+  .ui.segment[class*="mobile only"]:not(.computer),
+  .ui.menu .menu[class*="mobile only"]:not(.computer),
+  .ui.menu .item[class*="mobile only"]:not(.computer) {
+    display: none !important;
+  }
+  .ui.segment[class*="tablet only"]:not(.computer),
+  .ui.menu .menu[class*="tablet only"]:not(.computer),
+  .ui.menu .item[class*="tablet only"]:not(.computer) {
+    display: none !important;
+  }
+  .ui.segment[class*="large screen only"]:not(.mobile),
+  .ui.menu .menu[class*="large screen only"]:not(.mobile),
+  .ui.menu .item[class*="large screen only"]:not(.mobile) {
+    display: none !important;
+  }
+  .ui.segment[class*="widescreen only"]:not(.mobile),
+  .ui.menu .menu[class*="widescreen only"]:not(.mobile),
+  .ui.menu .item[class*="widescreen only"]:not(.mobile) {
+    display: none !important;
+  }
+}
+/* Large Screen Only Hide */
+@media only screen and (min-width: @largeMonitorBreakpoint) and (max-width: @largestLargeMonitor) {
+  .ui.segment[class*="mobile only"]:not(.computer),
+  .ui.menu .menu[class*="mobile only"]:not(.computer),
+  .ui.menu .item[class*="mobile only"]:not(.computer) {
+    display: none !important;
+  }
+  .ui.segment[class*="tablet only"]:not(.computer),
+  .ui.menu .menu[class*="tablet only"]:not(.computer),
+  .ui.menu .item[class*="tablet only"]:not(.computer) {
+    display: none !important;
+  }
+  .ui.segment[class*="widescreen only"]:not(.mobile),
+  .ui.menu .menu[class*="widescreen only"]:not(.mobile),
+  .ui.menu .item[class*="widescreen only"]:not(.mobile) {
+    display: none !important;
+  }
+}
+/* Widescreen Only Hide */
+@media only screen and (min-width: @widescreenMonitorBreakpoint) {
+  .ui.segment[class*="mobile only"]:not(.computer),
+  .ui.menu .menu[class*="mobile only"]:not(.computer),
+  .ui.menu .item[class*="mobile only"]:not(.computer) {
+    display: none !important;
+  }
+  .ui.segment[class*="tablet only"]:not(.computer),
+  .ui.menu .menu[class*="tablet only"]:not(.computer),
+  .ui.menu .item[class*="tablet only"]:not(.computer) {
+    display: none !important;
+  }
+}
+
+.ui.primary.text {
+  color: @primaryColor;
+}
+
+.ui.code.text {
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.ui.text {
+  font-family: @pageFont !important;
+  font-size: @medium;
+}
+
+.ui.mini.text {
+  font-size: @mini;
+}
+
+.ui.tiny.text {
+  font-size: @tiny;
+}
+
+.ui.small.text {
+  font-size: @small;
+}
+
+.ui.large.text {
+  font-size: @large;
+}
+
+.ui.grey.text {
+  color: @grey;
+}

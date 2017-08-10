@@ -1,0 +1,13 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.middle.aligned.center.aligned.container.grid {
+  .column:first-child {
+    margin-top: 2em;
+    max-width: 28em;
+
+    & > .ui.form {
+      margin-bottom: .8em;
+    }
+  }
+}

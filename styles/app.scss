@@ -1,0 +1,98 @@
+$footerHeight: 180px;
+
+#pusher {
+  height: 100% !important;
+  min-height: 100%;
+}
+
+#wrap {
+  height: auto !important;
+  min-height: 100%;
+  margin-bottom: -$footerHeight;
+
+  & > div {
+    margin-bottom: 1em;
+  }
+
+  #wrap_pusher {
+    height: $footerHeight;
+  }
+}
+
+#footer {
+  height: $footerHeight;
+  margin: 0em;
+
+  h4.ui.header {
+    margin-top: 1em;
+  }
+
+  .ui.divider {
+    margin: 2em;
+  }
+}
+
+#peatio-logo {
+  opacity: .5;
+}
+
+.highchart.block {
+  display: block;
+  width: 20px;
+  position: absolute !important;
+  height: 80px !important;
+  left: 0px;
+
+  &.ask { top: 0px; }
+}
+
+.highchart.market {
+  top: 17px;
+  left: 30px;
+  font-size: 16px !important;
+  color: #5B646F !important;
+  position: absolute !important;
+}
+
+.highchart.price {
+  color: #152232 !important;
+  position: absolute !important;
+  font-size: 30px !important;
+  top: 34px;
+  left: 30px;
+  display: block;
+}
+
+.ui.image + .ui.hidden.divider {
+  margin: 0.2rem 0rem !important;
+}
+
+#two_factor_setting.ui.raised.segment {
+  .ui.fluid.primary.button + .ui.hidden.divider {
+    margin: .2rem 0rem !important;
+  }
+
+  .ui.divider + .ui.hidden.divider {
+    margin: 0rem 0rem !important;
+  }
+}
+
+.ignore.text {
+  color: #CCC;
+}
+
+.right.floated.content{
+  .cny { font-weight:bold; } 
+}
+
+.ui.list > .item a.header:visited {
+  color: grey !important;
+}
+
+.ui.list > .item a.header:visited > i.icon {
+  color: grey !important;
+}
+
+.ui.tiny.header > i.icon {
+  font-size: 0.55em;
+}

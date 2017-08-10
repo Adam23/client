@@ -1,0 +1,5 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@tinySubHeaderFontSize: 0.75rem;
+@fontWeight: lighter;

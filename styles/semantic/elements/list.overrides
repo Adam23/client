@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+.ui.list .list > .item > i.icon, .ui.list > .item > i.icon {
+  padding-right: inherit;
+}

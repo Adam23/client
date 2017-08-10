@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.header.chatroom{
+  color: @blue !important;
+  font-size: 0.8em;
+}
+
+.ui.header > .content {
+  width: 100%;
+}

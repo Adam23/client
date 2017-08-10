@@ -1,0 +1,69 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.padding-less.segment {
+  &:first-child {
+    margin-top: 2px;
+  }
+  padding: 0em;
+ 
+  & > .ui.top.attached.segment {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+
+    & > h3 {
+      display: table !important;
+
+      & > i.icon {
+        padding-right: .5rem;
+      }
+
+      & > span {
+        width: 5000px;
+      }
+
+      & > div {
+        & > * {
+          width: 100px;
+          text-align: right;
+          display: inline-block;
+        }
+
+        & > .ui.popup {
+          width: auto;
+          display: none;
+        }
+      }
+
+      & > * {
+        height: 4rem;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.ui.nearest.segment {
+  margin: .5rem 0em;
+
+  &:first-child {
+    margin-top: 0em;
+  }
+}
+
+.ui.brimming.segment {
+  padding: 0em;
+}
+
+.ui.segment {
+  .ui.corner.label + * {
+    margin-top: unset;
+  }
+}
+
+.ui.inner.segment {
+  margin-left: .8em;
+}

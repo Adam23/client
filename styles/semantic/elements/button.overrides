@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.basic.borderless.button {
+  box-shadow: none;
+}

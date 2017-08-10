@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+.ui.bold.statistics {
+  .value {
+    font-weight: bold;
+  }
+}

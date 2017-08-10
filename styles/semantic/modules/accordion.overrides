@@ -1,0 +1,10 @@
+/*******************************
+        User Overrides
+*******************************/
+
+.ui.accordion {
+  .ui.header > .content {
+    margin: unset;
+    padding: unset;
+  }
+}
